@@ -1,6 +1,7 @@
 var React = require("react");
-var rootEl = document.getElementById("content");
 var AppFruit = require("./components/AppFruit.jsx");
+
+var rootEl = document.getElementById("container");
 
 React.render(
   <AppFruit />,
