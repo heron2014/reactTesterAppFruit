@@ -2,6 +2,7 @@ var React = require("react");
 var FruitHeader = require("./FruitHeader.jsx");
 var FruitList = require("./FruitList.jsx");
 var FruitFooter = require("./FruitFooter.jsx");
+var StaticHeader = require("./staticHeader.jsx");
 
 var AppFruit = React.createClass({
 
@@ -87,6 +88,7 @@ var AppFruit = React.createClass({
   render: function() {
     return (
       <div className="app-wrapper">
+        <StaticHeader />
         <FruitHeader title={this.state.headerText}
          fruitInput={this.addFruit}
          changeText={this.changeHeaderText} />

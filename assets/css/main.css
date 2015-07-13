@@ -8,6 +8,12 @@ body {
   outline: auto;
 }
 
+.static {
+  color: black;
+  font-size:20px;
+  margin: 10px;
+  text-align: center;
+}
 .app-wrapper {
   background-color: rgb(255,107,107);
   width: 350px;
