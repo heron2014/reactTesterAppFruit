@@ -9,7 +9,7 @@ var FruitListItem = React.createClass({
     return (
 
       <div className="fruit-item">
-        <button className="minus">-</button>
+        <button className="minus" onClick={this.props.subtractNumber}>-</button>
           {this.props.content}
         <button className="plus" onClick={this.props.addNumber}>+</button>
         <span className="list-number">{this.props.quantity}</span>
@@ -20,3 +20,5 @@ var FruitListItem = React.createClass({
 });
 
 module.exports = FruitListItem;
+
+

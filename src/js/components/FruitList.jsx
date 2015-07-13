@@ -14,7 +14,8 @@ var FruitList = React.createClass({
       
         items.push(
           <FruitListItem key={item.id} content={item.fruit} quantity={item.number}
-          addNumber={this.props.increaseNumber.bind(null, item.id)} />
+          addNumber={this.props.increaseNumber.bind(null, item.id)}
+          subtractNumber={this.props.decreaseNumber.bind(null, item.id)} />
           
         );
       
