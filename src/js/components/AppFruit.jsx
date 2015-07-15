@@ -10,6 +10,9 @@ var AppFruit = React.createClass({
     return {
       headerText : "",  
       fruities: [
+        {id:1, fruit: "Apple", number: 3},
+        {id:2, fruit: "Kiwi", number: 1},
+        {id:3, fruit: "Mango", number: 4}, 
       
       ]
     };
