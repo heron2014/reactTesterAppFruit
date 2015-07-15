@@ -1,6 +1,14 @@
 var React = require("react");
 
+var Props = React.PropTypes;
+
 var FruitHeader = React.createClass({
+
+  propTypes: {
+    title: Props.string,
+    changeText: Props.func.isRequired,
+    fruitInput: Props.func.isRequired
+  },
 
  textChangeHandler: function(e){
   e.preventDefault();
