@@ -10,7 +10,8 @@
     "build:watch": "watchify src/js/main.jsx -t reactify --es6 -o build/js/main.js",
     "lint": "jsxhint src/**/*.jsx",
     "live-reload": "live-reload build/ --port 9081",
-    "serve": "http-server -s"
+    "serve": "http-server -s",
+    "test": "mocha --compilers js:babel/register --recursive"
   },
   "author": "MIJOTHY",
   "license": "ISC",
