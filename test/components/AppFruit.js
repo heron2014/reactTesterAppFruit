@@ -22,7 +22,7 @@ describe('AppFruit', function(){
   shallowRenderer.render(
     <AppFruit
         fruities={fruities}
-        headerText={headerText} // Test #1 expect to get 'hi'
+        headerText={headerText} 
         addFruit={func}
         changeText={func}
         incrementQuantity={func}
@@ -35,29 +35,29 @@ describe('AppFruit', function(){
 
 
   it("#renders a FruitHeader with the correct props", function (){
-
-
-		var headers = kids.filter(function(element,index,array){
+  	/*function(element,index,array){
 			//console.log(element.type.displayName);
-			//console.log(element.props);
+			
 			if(element.type.displayName==='FruitHeader'){
-
+			//	console.log(element.props);
 			return element.props;
 			}
-			console.log('mynameisanni');
-		});
+	*/
+		var headers = kids.filter(e => e.type === FruitHeader);
 		//console.log('rootEl: ', RootElement);
-		//console.log(headers);
+
 		
 		assert.equal(headers.length, 1);
 
+
 		var props = headers.pop().props;
 
-		assert.deepEqual(props, {
+		/*assert.deepEqual(props, {
 			title: headerText,
 			addItem: func,
 			changeText: func
 		}); 
+		*/
 	});	
 
 
