@@ -4,7 +4,9 @@ var FruitHeader = require("./FruitHeader.jsx");
 var FruitList = require("./FruitList.jsx");
 var FruitFooter = require("./FruitFooter.jsx");
 
+
 var AppFruit = React.createClass({
+
 
   getInitialState: function() {
     return {

@@ -1,8 +1,17 @@
 var React = require("react");
 
+var Props = React.PropTypes;
+
 var FruitListItem = React.createClass({
 
- 
+
+
+propTypes:{
+  'content': Props.string,
+  'addNumber': Props.func.isRequired,
+  'subtractNumber': Props.func.isRequired,
+  'quantity': Props.number
+},
 
   render: function() {
 

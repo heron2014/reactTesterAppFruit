@@ -1,9 +1,14 @@
 var React = require("react");
 
-
+var Props = React.PropTypes;
 
 
 var FruitFooter = React.createClass({
+
+propTypes:{
+	'deleteAllFruit': Props.func.isRequired
+},
+
   render: function() {
     return (
       <div className="options-item">

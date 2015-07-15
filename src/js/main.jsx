@@ -9,11 +9,6 @@ var headerPos= document.getElementById("headerContainer");
 React.render(
   <AppFruit />,
   rootEl
-),
-
-React.render(
-	<HeaderApp />,
-	headerPos
 );
 
 

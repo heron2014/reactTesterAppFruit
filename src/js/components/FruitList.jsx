@@ -1,8 +1,16 @@
 var React = require("react");
 var FruitListItem = require("./FruitListItem.jsx");
 
+var Props = React.PropTypes;
 
 var FruitList = React.createClass({
+
+
+propTypes:{
+  'items': Props.arrayOf(Props.object),
+  'increaseNumber': Props.func.isRequired,
+  'decreaseNumber': Props.func.isRequired,
+},
 
   
 
